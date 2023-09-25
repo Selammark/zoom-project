@@ -13,8 +13,8 @@ app.use("/peerjs", peerServer);
 app.get("/", (req, res) => {
   res.redirect(`/${uuidv4()}`);
 });
-app.get("/:index", (req, res) => {
-  res.render("index", { roomid: req.params.room });
+app.get("/:room", (req, res) => {
+  res.render("room", { roomid: req.params.room });
 });
 io.on("connection", (socket) => {
   socket.on("join-room", (roomid, userid) => {
