@@ -1,0 +1,4 @@
+[[redirects]]
+from ="/*"
+to="/room.ejs"
+status=200
