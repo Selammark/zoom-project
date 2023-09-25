@@ -1,4 +1,4 @@
 [[redirects]]
 from ="/*"
-to="/room.ejs"
+to="/views/room.ejs"
 status=200
